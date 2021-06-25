@@ -1,6 +1,6 @@
 # Task Tracker App
 
-Task Tracker is a web application made for the sole purpose of understanding React.js and usage of json-server as a artifical back-end.
+Task Tracker is a web application made using React.js for frontend and MySQL, SpringBoot and TomCat server as backend.
 
 ## This project includes:
 - A header containing the title and an add Button.
