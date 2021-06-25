@@ -24,7 +24,6 @@ const App = () =>  {
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:8080/api/tasks/')
     const data = await res.json()
-    console.log(data)
     return data
   }
 
@@ -47,7 +46,7 @@ const App = () =>  {
     })
      
     const data = await res.json()
-
+  console.log(data)
     setTasks([...tasks, data])
   }
 
