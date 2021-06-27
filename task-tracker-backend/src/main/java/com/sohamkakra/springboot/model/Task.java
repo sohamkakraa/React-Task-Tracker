@@ -45,8 +45,7 @@ public class Task {
 		return task;
 	}
 	public void setTask(String task) {
-		this.task = task
-				;
+		this.task = task;
 	}
 	public String getDay() {
 		return day;

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import DateTimePicker from 'react-datetime-picker'
 
 const AddTask = ({ onAdd }) => {
 
@@ -13,7 +14,7 @@ const AddTask = ({ onAdd }) => {
             alert('Please add a task')
             return
         }
-
+        
         onAdd({ task, day, reminder })
 
         setTask('')
@@ -28,8 +29,8 @@ const AddTask = ({ onAdd }) => {
                 <input type = 'text' placeholder = 'Add Task' value = {task} onChange = {(e) => setTask(e.target.value)} />
             </div>
             <div className = 'form-control '>
-                <label>Day & Time</label>
-                <input type = 'text' placeholder = 'Add Day and Time' value = {day} onChange = {(e) => setDay(e.target.value)} />
+                <label>Date</label>
+                <DateTimePicker onChange = {setDay} value = {day} />
             </div>
             <div className = 'form-control form-control-check'>
                 <label>Set Reminder</label>

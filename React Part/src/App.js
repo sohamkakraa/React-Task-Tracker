@@ -55,6 +55,7 @@ const App = () =>  {
     await fetch(`http://localhost:8080/api/tasks/${id}`, { 
       method : 'DELETE'
     })
+    alert("Task has been deleted successfully")
 
     setTasks(tasks.filter((task) => task.id !==id))
   }
